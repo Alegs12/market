@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/9cba30bc7a.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-card-item.css">
     <script src="https://kit.fontawesome.com/9cba30bc7a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,15 +20,46 @@
 <body>
     <header class="header flex-box container">
         <div class="header-left-part">
-            <a href="#"><img class="main-logo" src="/img/logo.svg" alt="логотип"></a>
+            <a href="#"><img class="main-logo" src="img/logo.svg" alt="логотип"></a>
             <i class="fas fa-regular fa-magnifying-glass"></i>
         </div>
         <div class="header-right-part">
-            <i class="fas fa-regular fa-bars"></i>
-            <i class="fas fa-light fa-user"></i>
-            <i class="fas fa-light fa-cart-shopping"></i>
+            <div class="head-menu head-menu_hover">
+                <span><i class="fas fa-regular fa-bars"></i></span>
+                <menu class="menu hidden">
+                    <h2 class="menu-head">MENU</h2>
+                    <h3 class="menu-article">MAN</h3>
+                    <p class="menu-content">Accessories</p>
+                    <p class="menu-content">Bags</p>
+                    <p class="menu-content">Denim</p>
+                    <p class="menu-content">T-Shirts</p>
+
+                    <h3 class="menu-article">WOMAN</h3>
+                    <p class="menu-content">Accessories</p>
+                    <p class="menu-content">Jackets & Coats</p>
+                    <p class="menu-content">Polos</p>
+                    <p class="menu-content">T-Shirts</p>
+                    <p class="menu-content">Shirts</p>
+
+                    <h3 class="menu-article">KIDS</h3>
+                    <p class="menu-content">Accessories</p>
+                    <p class="menu-content">Jackets & Coats</p>
+                    <p class="menu-content">Polos</p>
+                    <p class="menu-content">T-Shirts</p>
+                    <p class="menu-content">Shirts</p>
+                    <p class="menu-content">Bags</p>
+                </menu>
+            </div>
+            <div class="head-user">
+                <i class="fas fa-light fa-user"></i>
+            </div>
+            <div class="head-cart">
+                <i class="fas fa-light fa-cart-shopping"></i>
+            </div>
         </div>
     </header>
+
+
 
     <main class="main container">
         <div class="main-left">
@@ -72,11 +104,22 @@
         </div>
     </section>
 
-    <section class="items-section">
+    <section class="items-section container">
         <h1 class="section-items-head">Fetured Items</h1>
         <p class="section-items-text">Shop for items based on what we featured in this week</p>
         <div class="content-box">
-            <!-- 
+
+            <!-- <div class="item">
+                <div class="img-item-div">
+                    <img src="" alt="" class="img-item">
+                </div>
+                <div class="cont-item-div">
+                    <h3 class="head-item"></h3>
+                    <p class="descr-item"></p>
+                    <p class="price-item"></p>
+                </div>
+            </div>
+
             <div class="item">
                 <div class="img-item-div">
                     <img src="" alt="" class="img-item">
@@ -95,19 +138,19 @@
 
     <div class="promotions container">
         <div class="promo">
-            <img class="icon-img" src="/img/icon-delivery.svg" alt="icon-delivery" class="icon">
+            <img class="icon-img" src="img/icon-delivery.svg" alt="icon-delivery" class="icon">
             <h3 class="promo-head">Free Delivery</h3>
             <p class="promo-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
                 extensive models.</p>
         </div>
         <div class="promo">
-            <img class="icon-img" src="/img/icon-sale.svg" alt="icon-delivery" class="icon">
+            <img class="icon-img" src="img/icon-sale.svg" alt="icon-delivery" class="icon">
             <h3 class="promo-head">Sales & discounts</h3>
             <p class="promo-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
                 extensive models..</p>
         </div>
         <div class="promo">
-            <img class="icon-img" src="/img/icon-quality.svg" alt="icon-delivery" class="icon">
+            <img class="icon-img" src="img/icon-quality.svg" alt="icon-delivery" class="icon">
             <h3 class="promo-head">Quality assurance</h3>
             <p class="promo-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
                 extensive models.</p>
@@ -115,13 +158,14 @@
     </div>
 
     <div class="card-items">
+        <!-- <h3 class="head-card-items"></h3> -->
 
     </div>
 
     <section class="subscribe container">
         <div class="sub-back">
             <figure class="figure">
-                <img class="img-fig" src="/img/avatar.svg" alt="photo">
+                <img class="img-fig" src="img/avatar.svg" alt="photo">
                 <figcaption class="fig-comment">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
                     purus
                     condimentum“</figcaption>
